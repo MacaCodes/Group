@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: inter;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary: #199cdb;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row{
+    padding: 0 16px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/*Navigation bar*/
+
+.nav-row{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+}
+
+.nav-logo{
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.nav-link{
+    margin: 0 8px;
+    color: black;
+}
+
+.nav-button{
+    padding: 8px 16px;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/*Header*/
+
+.header-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.header-title{
+    font-size: 36px;
+}
+
+.header-button{
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.header-img{
+    max-width: 100%;
+}
+
+/*Main*/
+
+.main-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    background-color: #f6f6f6;
+
+}
+
+.main-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(100%/3);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-logo{
+    width: 72px;
+    height: 72px;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 9999px;
+}
+
+.card-paragraph{
+    line-height: 1.5;
+}
+
+.main-title{
+    padding: 10px 0;
+    font-size: 32px;
+}
+
+.main-paragraph{
+    max-width: 580px;
+    line-height: 1.5;
+}
+
+/*Feature*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.feature-title{
+    font-size: 32px;
+}
+
+.feature-paragraph{
+    max-width: 800px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature{
+    display: flex;
+    gap: 64px;
+    margin-top: 64px;
+    max-width: 800px;
+}
+
+.feature-image{
+    width: 50%;
+}
+
+.feature-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 8px;
+    align-items: start;
+}
+
+.feature-wrapper-title{
+    font-size: 32px;
+}
+
+.feature-link{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    padding-bottom: 2px;
+    transition: 200ms;
+}
+
+.feature-link:hover{
+    border-bottom: 2px solid var(--primary);
+}
+/*Reviews*/
+#reviews{
+    background-color: #f6f6f6;
+}
+
+.review-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.review-title{
+    font-size: 32px;
+}
+
+.review-paragraph{
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.review{
+    display: flex;
+    max-width: 700px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.review-text,
+.review-info{
+    width: 50%;
+}
+
+.review-text{
+    background-color: var(--primary);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 32px;
+}
+
+.review-image{
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+}
+
+.review-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: white;
+}
+
+.review-rating{
+    color: #fcc478;
+    font-size: 8px;
+    margin-top: 4px;
+}
+
+.review-name{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.review-occupation{
+    font-size: 12px;
+}
+/*Pricing*/
+.pricing-row{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-title{
+    font-size: 32px;
+}
+
+.pricing-paragraph{
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.pricing-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.plan{
+    width: 100%;
+    height: 510px;
+    max-width: 300px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 12px rgb(0, 0, 0, 0.1);
+    padding: 32px 12px;
+}
+
+.plan-title{
+    font-size: 28px;
+    color: var(--primary);
+}
+
+.plan-icon{
+    font-size: 48px;
+    color: var(--primary);
+}
+
+.plan-price{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.plan-features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 16px;
+}
+
+.plan-feature{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.plan-button{
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 32px;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+/*Footer*/
+#footer{
+    background-color: var(--primary);
+    color: white;
+    height: 64px;
+}
+
+.footer-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link{
+    padding: 0 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-span{
+    font-size: 18px;
+    font-weight: 500;
+}
+/*Tablet*/
+@media (max-width: 768px){
+    .nav-link,
+    .nav-button{
+        font-size: 14px;
+    }
+
+    .header-title{
+        font-size: 14px;
+    }
+
+    .header-button{
+        font-size: 12px;
+    }
+    
+    .card{
+        width: 50%;
+    }
+
+    .feature-title{
+        font-size: 20px;
+    }
+
+    .feature-paragraph{
+        font-size: 14px;
+    }
+
+    .review-text{
+        font-size: 16px;
+    }
+}
+/*Smartphones*/
+@media(max-width:480px){
+    .nav-link:not(:last-child){
+        display: none;
+    }
+
+    .header-title{
+        font-size: 24px;
+    }
+
+    .pricing-title,
+    .feature-title,
+    .review-title,
+    .main-title{
+        font-size: 24px;
+    }
+
+    .card{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    .card-paragraph{
+        font-size: 14px;
+    }
+
+    .feature{
+        flex-direction: column;
+    }
+
+    .feature:last-child{
+        flex-direction: column-reverse;
+    }
+
+    .feature-image{
+        width: 100%;
+    }
+
+    .feature-wrapper{
+        align-items: center;
+        text-align: center;
+    }
+
+    .review{
+        flex-direction: column;
+        height: 400px;
+        width: 100%;
+    }
+
+    .review-text,
+    .review-rating{
+        width: 100%;
+        height: 50%;
+    }
+
+    .footer-span{
+        display: none;
+    }
+
+    .footer-row{
+        justify-content: center;
+    }
+
+    .footer-link{
+        margin: 0 4px;
+    }
+}
+

@@ -2,30 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="about.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="about.js" defer></script>
 </head>
 
 <body>
-    <div id="banner-message">
-        <p>Select a Breed</p>
-      
-        <select class="breed_select" onclick="getBreeds()"><option></option>
-      </select>
-      
-      </div>
-      <div id="breed_data">
-        <img id="breed_image" src="" />
-        <p>
-          Breed Data
-        </p>
-        <table id="breed_data_table">
-      
-        </table>
-      </div>
+  <div id="banner-message">
+    <p>Select a Breed</p>
+    <select class="breed_select" onchange="renderBreed()">
+      <option value=""></option>
+    </select>
+  </div>
+
+  <div id="breed-info" onchange="renderBreed()"></div>
+
 </body>
 
 </html>
+

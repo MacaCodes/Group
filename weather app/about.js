@@ -13,7 +13,7 @@ async function search(){
     document.querySelector('.weather-detail-reading-wind').innerHTML = `${data.wind.speed}km/h`
 
     } catch{
-        alert("Please try again")
+        alert("Please try again") 
     }
    
 }
