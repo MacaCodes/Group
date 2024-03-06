@@ -1,3 +1,7 @@
+h1 {
+  color: purple;
+}
+
 .flex-container {
     display: flex;
     justify-content: space-around;
