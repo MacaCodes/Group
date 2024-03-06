@@ -9,6 +9,10 @@ h1 {
     height: 100vh;
   }
   
+  .img { 
+    width: 40%;
+  }
+
   .flex-item {
     width: 100px;
     height: 100px;
