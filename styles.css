@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .flex-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  /* Rainbow colors */
+  .flex-item:nth-child(1) {
+    background-color: red;
+  }
+  
+  .flex-item:nth-child(2) {
+    background-color: orange;
+  }
+  
+  .flex-item:nth-child(3) {
+    background-color: yellow;
+  }
+  
+  .flex-item:nth-child(4) {
+    background-color: green;
+  }
+  
+  .flex-item:nth-child(5) {
+    background-color: blue;
+  }
+  
+  .flex-item:nth-child(6) {
+    background-color: violet;
+  }
+  
